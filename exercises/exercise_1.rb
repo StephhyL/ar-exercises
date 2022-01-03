@@ -1,6 +1,33 @@
 require_relative '../setup'
 
-puts "Exercise 1"
-puts "----------"
+puts 'Exercise 1'
+puts '----------'
 
 # Your code goes below here ...
+stores =
+  Store.create(
+    name: 'Burnaby',
+    annual_revenue: 300_000,
+    mens_apparel: true,
+    womens_apparel: true,
+  )
+
+stores =
+  Store.create(
+    name: 'Richmond',
+    annual_revenue: 1_260_000,
+    mens_apparel: false,
+    womens_apparel: true,
+  )
+
+stores =
+  Store.create(
+    name: 'Gaston',
+    annual_revenue: 190_000,
+    mens_apparel: true,
+    womens_apparel: false,
+  )
+
+# output (puts) the number of stores using AR's count method, to ensure that there are three stores in the database
+puts Store.count # 3
+# "#{Store.count}"
