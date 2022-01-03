@@ -15,4 +15,4 @@ puts '----------'
 puts '----------'
 #Verify that the store has been deleted by again outputting (puts ing) the count (as you did in ex. 1)
 
-puts Store.count
+puts Store.count # => 2
