@@ -10,26 +10,29 @@ puts '----------'
 
 # Add 3 more stores
 
-Store.create(
-  name: 'Surrey',
-  annual_revenue: 224_000,
-  mens_apparel: false,
-  womens_apparel: true,
-)
+@store4 =
+  Store.create(
+    name: 'Surrey',
+    annual_revenue: 224_000,
+    mens_apparel: false,
+    womens_apparel: true,
+  )
 
-Store.create(
-  name: 'Whistler',
-  annual_revenue: 1_900_000,
-  mens_apparel: true,
-  womens_apparel: false,
-)
+@store5 =
+  Store.create(
+    name: 'Whistler',
+    annual_revenue: 1_900_000,
+    mens_apparel: true,
+    womens_apparel: false,
+  )
 
-Store.create(
-  name: 'Yaletown',
-  annual_revenue: 430_000,
-  mens_apparel: true,
-  womens_apparel: true,
-)
+@store6 =
+  Store.create(
+    name: 'Yaletown',
+    annual_revenue: 430_000,
+    mens_apparel: true,
+    womens_apparel: true,
+  )
 
 puts "store count ----> #{Store.count}"
 
