@@ -52,10 +52,11 @@ puts '----LOOPS------'
 puts '-----WOMEN APPAREL && < $1M-----'
 # Do another fetch but this time, load stores that carry women's apparel and are generating less than $1M in annual revenue
 
+#?????
 @womens_apparel_little_revenue =
   Store.where(womens_apparel: true, annual_revenue: 0...1_000_000)
 
-puts "count ----> #{@womens_apparel_little_revenue.count}" #3
+puts "count ----> #{@womens_apparel_little_revenue.count}"
 
 puts "#{@womens_apparel_little_revenue.each { |store| puts store.name, store.annual_revenue }}"
 puts '----------'
